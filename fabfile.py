@@ -10,6 +10,9 @@ def pull():
 def build():
     local('make build')
 
+def package():
+    local('tar -czf build.tgz _build/')
+
 def open():
     local('open http://eg.bjb.io')
 

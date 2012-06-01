@@ -5,3 +5,4 @@ comp/
 _build/*
 
 !_build/.gitkeep
+/build.tgz
