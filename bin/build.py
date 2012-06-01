@@ -96,10 +96,14 @@ class Gallery(object):
         shutil.copytree('assets', '_build/assets')
         
         
-g = Gallery('index')
+def execute():
+    g = Gallery('index')
+    g.clean()
+    g.prepare()
+    g.write_index()
+    g.write_pages()
+    g.copy_things()
 
-g.clean()
-g.prepare()
-g.write_index()
-g.write_pages()
-g.copy_things()
+if __name__ == '__main__':
+    print "building..."
+    execute()
