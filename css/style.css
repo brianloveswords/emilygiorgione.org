@@ -106,10 +106,13 @@ nav li:first-child {
   text-align: left;
 }
 
-.details .items img, .details .items video {
+.details .items img,
+.details .items video,
+.details .items iframe {
   margin-bottom: 20px;
   width: 540px;
 }
+
 .description p {
   line-height: 21px;
 }

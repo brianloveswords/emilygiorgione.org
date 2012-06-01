@@ -1,6 +1,13 @@
 build:
-	python bin/build.py
+	@python bin/build.py
 
-serve:
-	killall python; python bin/build.py && (cd _build/ && python -m SimpleHTTPServer)&
+open: build
+	@killall python; \
+		(cd _build/ && python -m SimpleHTTPServer)& \
+		sleep 2; \
+		open http://localhost:8000
 
+kill:
+	@killall python
+
+.PHONY: build open kill
