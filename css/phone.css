@@ -1,0 +1,76 @@
+html {
+  background: url(/images/bg-texture.png);
+  font-family: 'Georgia';
+}
+
+.main-container {
+  margin: 10px 0;
+  padding: 20px;
+  width: 300px;
+}
+
+h1 {
+  font-size: 22px;
+}
+h1 .greeting {
+  text-align: center;
+  display: none;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+h2 .regular {
+  display: none;
+}
+
+h2 .phone {
+  display: block;
+}
+
+h2 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2 ul li {
+  display: inline-block;
+}
+h2 ul li:before {
+  content: '/';
+}
+
+.items h3 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+nav li, footer nav a {
+  padding: 10px 6px;
+}
+
+nav ul li{
+  display: none;
+}
+nav ul li {
+  font-size: 12px;
+}
+
+.item {
+  text-align: left;
+}
+
+.items .description, img {
+  float: none;
+  width: 270px;
+}
+
+footer nav {
+  display: none;
+}
+
+footer {
+  font-size: 12px;
+}

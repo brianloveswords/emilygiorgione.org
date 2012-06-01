@@ -1,0 +1,7 @@
+.DS_Store
+*.pyc
+
+comp/
+_build/
+
+!_build/.gitkeep
