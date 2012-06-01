@@ -1,5 +1,3 @@
-from __future__ import with_statement
-
 import time
 from fabric.api import *
 from fabric.contrib.console import confirm
