@@ -14,9 +14,9 @@ class Gallery(object):
     
     @staticmethod
     def data_from_yml(prefix):
-        fp = open(path(Gallery.directory, prefix + '.yml'))
-        data = yaml.load(fp)
-        fp.close
+        filename = path(Gallery.directory, '%s.yml' % prefix)
+        with open(filename) as fp:
+            data = yaml.load(fp)
         return data
     
     @staticmethod
