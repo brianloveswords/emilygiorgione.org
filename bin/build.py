@@ -6,7 +6,7 @@ from utils import slugify
 
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-def path(*a): return os.path.join(ROOT, *a)
+def path(*a): return os.path.join(os.getcwd(), *a)
 
 jinja = Environment(loader=FileSystemLoader('./_layouts'))
 class Gallery(object):
