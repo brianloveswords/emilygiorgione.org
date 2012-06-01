@@ -1,7 +1,7 @@
 import re
 
-_slugify_strip_re = re.compile(r'[^\w\s-]')
-_slugify_hyphenate_re = re.compile(r'[-\s]+')
+_slugify_strip_re = re.compile(r'[^\w\s/-]')
+_slugify_hyphenate_re = re.compile(r'[-/\s]+')
 
 def slugify(value):
     """

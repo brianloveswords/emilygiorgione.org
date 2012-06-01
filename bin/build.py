@@ -22,7 +22,10 @@ class Gallery(object):
     @staticmethod
     def assoc_pages(accum, name):
         data = Gallery.data_from_yml(name)
-        data['slug'] = slugify(data.get('title'))
+        if not data.get('slug'):
+            data['slug'] = slugify(data.get('title'))
+        else:
+            data['slug'] = slugify(data.get('slug'))
         accum[name] = data
         return accum
     

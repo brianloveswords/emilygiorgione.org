@@ -10,6 +10,9 @@ def pull():
 def build():
     local('make build')
 
+def open():
+    local('open http://eg.bjb.io')
+
 def deploy(clean=False):
     timestamp = time.time()
     path = '/srv/www/eg-site-build.%s' % timestamp
@@ -22,7 +25,7 @@ def deploy(clean=False):
     with cd('/srv/www/'):
         if clean:
             run('mv %s eg-site-build.latest' % (path,))
-            run('ln -f -s /srv/www/eg-site-build.latest eg.bjb.io')
+            run('ln -T -f -s /srv/www/eg-site-build.latest eg.bjb.io')
             run('rm -r eg-site-build.1*')
             run('mv eg-site-build.latest %s' % (path,))
-        run('ln -f -s %s eg.bjb.io' % (path,))
+        run('ln -T -f -s %s eg.bjb.io' % (path,))
