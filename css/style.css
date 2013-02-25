@@ -4,7 +4,7 @@
 }
 
 html {
-  background: url(/images/bg-texture.png);
+  background: url("/images/bg-texture.png");
   font-family: 'Georgia';
 }
 
@@ -25,6 +25,8 @@ h1 {
   font-size: 44px;
   font-weight: normal;
   text-transform: uppercase;
+  background: url("/images/e.png") no-repeat 0 6px;
+  padding-left: 60px;
 }
 
 h2 {
@@ -58,7 +60,17 @@ nav li, footer nav a {
   display: inline-block;
   text-transform: lowercase;
   border-left: 1px solid black;
-  padding: 6px 18px;
+  padding: 0 18px;
+  line-height: 47px;
+}
+
+nav .icon:hover {
+  text-decoration: none;
+}
+
+nav .icon img {
+  top: 10px;
+  position: relative;
 }
 
 nav li:first-child {
