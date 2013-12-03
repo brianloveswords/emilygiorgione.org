@@ -28,14 +28,7 @@ http.createServer(function (req, res) {
 
     const fixedPath = pathname.slice(1).replace(/\/$/, '')
 
-    if (fixedPath == '/contact') {
-      res.writeHead(200, {'content-type': mimeHtml })
-      return res.end(nunjucks.render('contact.html', {
-        page: 'contact',
-      }))
-    }
-
-    if (fixedPath == '/resume') {
+    if (fixedPath == 'resume') {
       res.writeHead(200, {'content-type': mimeHtml })
       return res.end(nunjucks.render('resume.html', {
         page: 'resume',

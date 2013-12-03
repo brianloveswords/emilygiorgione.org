@@ -7,7 +7,7 @@ body {
   background: url("/images/geometry.png");
 }
 
-ul {
+ul, ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -216,6 +216,108 @@ header nav a.icon {
 
 .specific .images li {
   margin-bottom: 17px;
+}
+
+.resume h3 {
+  margin: 0 0 0.4em;
+  padding: 0;
+  color: #b4b4b4;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.education .school {
+  font-size: 1.1rem;
+  display: block;
+  font-weight: 300;
+}
+
+.education .degree {
+  font-weight: bold;
+  font-size: 0.90rem;
+  display: block;
+}
+
+.education .degree:after {
+  content: ",";
+}
+
+.education .date,
+.experience .duration {
+  font-size: 0.78rem;
+  font-style: italic;
+}
+
+.sidebar section {
+  margin-bottom: 1.5em;
+}
+
+.interests ol {
+  counter-reset: li;
+  font-size: 0.89rem;
+}
+
+.interests ol li:before {
+  content: counter(li) '. ';
+  counter-increment: li;
+  font-weight: 900;
+}
+
+.proficiencies li {
+  font-size: 0.89rem;
+}
+
+.proficiencies li {
+  display: inline;
+}
+
+.proficiencies li:after {
+  content: ', ';
+}
+
+.proficiencies li:last-child:after {
+  content: '';
+}
+
+.experience li {
+  margin-bottom: 1.65em;
+}
+
+.experience .title {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.experience .title:after {
+  padding: 0 0.2em;
+  content: ' | ';
+}
+
+.experience .where {
+  font-size: 0.90em;
+}
+
+.experience .where a {
+  color: #363636;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.experience address {
+  display: inline;
+  font-style: normal;
+}
+
+.experience address:before {
+  content: " — ";
+}
+
+.resume .sidebar {
+  float: left;
+  height: 615px;
+  width: 215px;
+  margin-right: 25px;
+  border-right: 1px dotted #363636;
 }
 
 footer {
