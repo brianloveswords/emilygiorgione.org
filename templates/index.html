@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+
+{% block content %}
+<section class="index">
+  <ul>
+  {% for page in pages %}
+    <li>
+      <div class="context">
+        <h3>{{ page.context.title }}</h3>
+        <p>{{ page.context.description }}</p>
+        <a class="see-more" href="{{ page.page }}">See More</a>
+      </div>
+
+      <div class="image">
+        <a href="{{ page.page }}"><img src="{{ page.context.images[0] }}"></a>
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+{% endblock %}

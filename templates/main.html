@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <title>Emily Giorgione</title>
+  <link href="//fonts.googleapis.com/css?family=Lato:400,400italic,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/resume">Résumé</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a class="icon behance" href="/behance">Behance</a></li>
+        <li><a class="icon flickr" href="/flickr">Flickr</a></li>
+        <li><a class="icon facebook" href="/facebook">Facebook</a></li>
+        <li><a class="icon vimeo" href="/vimeo">Vimeo</a></li>
+        <li><a class="icon linkedin" href="/linkedin">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main">
+    <section class="masthead">
+      <h1>Emily Giorgione</h1>
+      <h2>
+        Hi! I'm a visual designer based in Brooklyn, NY.<br/>
+        <em>Thanks for stopping by!</em>
+      </h2>
+    </section>
+
+    {% block content %}{% endblock %}
+    <footer>
+      &copy; Copyright 2013. Emily Giorgione |
+      <a href="mailto:egiorgione@gmail.com">egiorgione@gmail.com</a>
+    </footer>
+  </div>
+
+</body>
+</html>

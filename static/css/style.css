@@ -1,0 +1,162 @@
+* {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  background: url("/images/bg-texture.png");
+  font-family: 'Georgia';
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  margin: 0;
+  padding: 8px 0;
+  font-size: 44px;
+  font-weight: normal;
+  text-transform: uppercase;
+  background: url("/images/e.png") no-repeat 0 6px;
+  padding-left: 60px;
+}
+
+h2 {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: normal;
+  padding: 14px 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h2 .regular {
+  display: block;
+}
+
+h2 .phone {
+  display: none;
+}
+
+nav ul {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+nav li, footer nav a {
+  font-size: 16px;
+  display: inline-block;
+  text-transform: lowercase;
+  border-left: 1px solid black;
+  padding: 0 18px;
+  line-height: 47px;
+}
+
+nav .icon:hover {
+  text-decoration: none;
+}
+
+nav .icon img {
+  top: 10px;
+  position: relative;
+}
+
+nav li:first-child {
+  border-left: none;
+}
+
+.main-container {
+  background: #fff;
+  margin: 30px auto;
+  padding: 54px;
+  width: 1024px;
+  box-shadow: 0px 8px 5px 2px #ccc;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.item {
+  border-bottom: 1px solid black;
+  padding: 40px 0;
+  text-align: right;
+}
+
+.items {
+  font-size: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.items h3 {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 36px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}  
+
+.items .description {
+  float: left;
+  width: 330px;
+  text-align: left;
+}
+
+.details .items img,
+.details .items video,
+.details .items iframe {
+  margin-bottom: 20px;
+  width: 540px;
+}
+
+.description p {
+  line-height: 21px;
+}
+
+.description .see-more {
+  display: block;
+  font-style: italic;
+}
+
+footer {
+  font-size: 20px;
+  text-align: center;
+}
+
+footer nav {
+  position: relative;
+  margin: 30px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+footer nav a {
+  border-right: 1px solid black;
+}
+
+footer nav .previous {
+  border: none;
+  left: 0;
+  position: absolute;
+}
+footer nav .next {
+  border: none;
+  right: 0;
+  position: absolute;
+}
