@@ -86,6 +86,7 @@ header nav a.icon {
   border-top: 6px solid #363636;
   border-bottom: 2px dotted #363636;
   height: 82px;
+  margin-bottom: 4rem;
 }
 
 .masthead h1, .masthead h2 {
@@ -109,8 +110,8 @@ header nav a.icon {
   top: 20px;
   right: 0;
 
-  font-size: 0.97rem;
-  width: 20.5em;
+  font-size: 0.96rem;
+  width: 20.6em;
 }
 
 .masthead hr {
@@ -118,8 +119,7 @@ header nav a.icon {
   clear: both;
 }
 
-.index {
-  margin-top: 4rem;
+.item {
   font-size: .89rem;
 }
 
@@ -131,18 +131,22 @@ header nav a.icon {
   margin-bottom: 27px;
 }
 
-.index h3 {
+.index li:last-child {
+  border-bottom: none;
+}
+
+.item h3 {
   font-size: 1.5rem;
   margin: 0;
   width: 260px;
 }
 
-.index p {
+.item p {
   margin: 0.7em 0 1.2em;
   width: 260px;
 }
 
-.index .see-more {
+.item .see-more {
   color: #363636;
   background: #fffb00;
   display: inline-block;
@@ -151,12 +155,80 @@ header nav a.icon {
   padding: 0.20em 1em;
 }
 
-.index .image {
+.item .image {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.index .image img {
+.item img {
+  transition: box-shadow 0.5s;
   width: 455px;
+}
+
+.item a img:hover {
+  transition: box-shadow 0.5s;
+  box-shadow: 0px 0px 4px #999;
+}
+
+.specific {
+  min-height: 500px;
+}
+
+.specific nav {
+  position: relative;
+  color: #b4b4b4;
+  font-size: 10rem;
+  font-weight: 300;
+  text-shadow: 0.01em 0.01em 0.01em #b4b4b4;
+}
+
+.specific nav a,
+.specific nav span {
+  position: absolute;
+  top: 200px;
+  display: block;
+  height: 1em;
+  overflow: hidden;
+  color: #363636;
+  text-shadow: 0.01em 0.01em 0.01em #efefef;
+}
+
+.specific nav span {
+  color: #b4b4b4;
+}
+
+.specific nav .previous {
+  left: -130px;
+}
+
+.specific nav .next {
+  right: -130px;
+}
+
+.specific .context {
+  float: left;
+}
+
+.specific .images {
+  text-align: right;
+}
+
+.specific .images li {
+  margin-bottom: 17px;
+}
+
+footer {
+  border-top: 2px dotted #363636;
+  font-size: .84rem;
+  margin-top: 100px;
+  padding: 22px 0 35px;
+}
+
+footer a {
+  color: #363636;
+}
+
+footer a:hover {
+  border-bottom: 1px solid #aaa;
 }

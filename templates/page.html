@@ -1,23 +1,32 @@
 {% extends "main.html" %}
+
 {% block content %}
-<section class="work">
+<section class="item specific">
+  <nav>
   {% if previous %}
-    <a href="{{ previous.page }}">back</a>
+    <a class="previous" href="{{ previous.page }}"> &lsaquo; </a>
+  {% else %}
+    <span class="previous"> &lsaquo; </span>
   {% endif %}
 
-  <h2>{{ current.context.title }}</h2>
+  {% if next %}
+    <a class="next" href="{{ next.page }}"> &rsaquo; </a>
+  {% else %}
+    <span class="next"> &rsaquo; </span>
+  {% endif %}
+  </nav>
 
-  <p class="description">{{ current.context.description }}</p>
+  <div class="context">
+    <h3>{{ current.context.title }}</h3>
+    <p class="description">{{ current.context.description }}</p>
+  </div>
 
-  <ul>
+  <ul class="images">
     {% for image in current.context.images %}
       <li><img src="{{ image }}"></li>
     {% endfor %}
   </ul>
 
-  {% if next %}
-    <a href="{{ next.page }}">next</a>
-  {% endif %}
-<section class="work">
+</section>
 
 {% endblock %}
