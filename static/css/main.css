@@ -7,6 +7,16 @@ body {
   background: url("/images/geometry.png");
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -24,9 +34,6 @@ header nav {
 }
 
 header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   text-align: right;
 }
 
@@ -45,10 +52,13 @@ header nav li:last-child {
   background: #fffb00;
 }
 
+a {
+  text-decoration: none;
+}
+
 header nav a {
   margin-right: 0.86em;
   color: white;
-  text-decoration: none;
   display: inline-block;
   background: #b4b4b4;
   width: 4.75em;
@@ -81,7 +91,6 @@ header nav a.icon {
 .masthead h1, .masthead h2 {
   margin: 0;
   padding: 0;
-  font-weight: normal;
 }
 
 .masthead h1 {
@@ -107,4 +116,47 @@ header nav a.icon {
 .masthead hr {
   margin-top: 10px;
   clear: both;
+}
+
+.index {
+  margin-top: 4rem;
+  font-size: .89rem;
+}
+
+.index li {
+  position: relative;
+  border-bottom: 1px dotted #999;
+  min-height: 300px;
+  padding-bottom: 35px;
+  margin-bottom: 27px;
+}
+
+.index h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  width: 260px;
+}
+
+.index p {
+  margin: 0.7em 0 1.2em;
+  width: 260px;
+}
+
+.index .see-more {
+  color: #363636;
+  background: #fffb00;
+  display: inline-block;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #cbcbcb;
+  padding: 0.20em 1em;
+}
+
+.index .image {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.index .image img {
+  width: 455px;
 }
