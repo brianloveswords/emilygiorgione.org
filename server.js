@@ -48,7 +48,7 @@ http.createServer(function (req, res) {
     return res.end()
   }
 )
-}).listen(9000, function () {
+}).listen(process.env.SOCKET || process.env.PORT || 9000, function () {
   console.log('listening on %j', this.address())
 })
 
