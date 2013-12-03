@@ -1,6 +1,67 @@
 body {
+  margin: 0;
+  padding: 8.7em 0 0;
   font-family: "Lato", sans-serif;
   font-size: 62.5%;
+  color: #363636;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  font-size: 1.0rem;
+  background: #363636;
+  color: white;
+  padding: 13px 0;
+}
+
+header nav {
+  width: 965px;
+  margin: 0 auto;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header nav li:last-child {
+  margin-right: 1em;
+}
+
+.page-home header a.home,
+.page-contact header a.contact,
+.page-resume header a.resume {
+  color: #363636;
+  background: #fffb00;
+}
+
+header nav a {
+  margin-right: 0.86em;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  background: #b4b4b4;
+  width: 4.75em;
+  height: 1.45em;
+  text-align: center;
+  border-radius: 3px;
+}
+
+header nav a.icon {
+  margin-right: 0.20em;
+  height: 1.45em;
+  width: 1.45em;
+  border-radius: 1.45em;
+  text-indent: -9999px;
 }
 
 .main {
@@ -11,8 +72,8 @@ body {
 
 .masthead {
   position: relative;
-  border-top: 6px solid black;
-  border-bottom: 2px dotted black;
+  border-top: 6px solid #363636;
+  border-bottom: 2px dotted #363636;
   height: 82px;
 }
 
