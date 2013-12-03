@@ -20,11 +20,28 @@ http.createServer(function (req, res) {
 
     if (pathname == '/') {
       res.writeHead(200, {'content-type': mimeHtml })
-      res.write(nunjucks.render('index.html', { pages: pages }))
-      return res.end()
+      return res.end(nunjucks.render('index.html', {
+        page: "home",
+        pages: pages
+      }))
     }
 
     const fixedPath = pathname.slice(1).replace(/\/$/, '')
+
+    if (fixedPath == '/contact') {
+      res.writeHead(200, {'content-type': mimeHtml })
+      return res.end(nunjucks.render('contact.html', {
+        page: 'contact',
+      }))
+    }
+
+    if (fixedPath == '/resume') {
+      res.writeHead(200, {'content-type': mimeHtml })
+      return res.end(nunjucks.render('resume.html', {
+        page: 'resume',
+      }))
+    }
+
     const page = findPage(fixedPath, pages)
 
     if (!page) {
