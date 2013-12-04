@@ -50,6 +50,7 @@ header nav li:last-child {
 .page-resume header a.resume {
   color: #363636;
   background: #fffb00;
+  pointer-events: none;
 }
 
 a {
@@ -65,6 +66,16 @@ header nav a {
   height: 1.45em;
   text-align: center;
   border-radius: 3px;
+}
+
+header nav a:hover {
+  background: #666;
+}
+
+header nav a:active,
+header nav a:focus {
+  background: #fffb00;
+  color: #000;
 }
 
 header nav a.icon {
@@ -147,13 +158,23 @@ header nav a.icon {
 }
 
 .item .see-more {
-  color: #363636;
-  background: #fffb00;
+  color: #fff;
+  background: #b4b4b4;
   display: inline-block;
   border-radius: 3px;
   box-shadow: 1px 1px 1px #cbcbcb;
   padding: 0.20em 1em;
 }
+
+.item .see-more:hover {
+  background: #666;
+}
+
+.item .see-more:active {
+  color: #363636;
+  background: #fffb00;
+}
+
 
 .item .image {
   position: absolute;
@@ -185,6 +206,7 @@ header nav a.icon {
 
 .specific nav a,
 .specific nav span {
+  transition: text-shadow 0.3s;
   position: absolute;
   top: 200px;
   display: block;
@@ -192,6 +214,15 @@ header nav a.icon {
   overflow: hidden;
   color: #363636;
   text-shadow: 0.01em 0.01em 0.01em #efefef;
+}
+
+.specific nav a:hover {
+  transition: text-shadow 0.3s;
+  text-shadow: 0.02em 0.02em 0.01em #ccc;
+}
+
+.specific nav a:active {
+  color: #b4b4b4;
 }
 
 .specific nav span {
@@ -301,6 +332,14 @@ header nav a.icon {
   color: #363636;
   font-weight: bold;
   text-decoration: underline;
+}
+
+.experience .where a:hover {
+  color: #666;
+}
+
+.experience .where a:active {
+  color: #b4b4b4;
 }
 
 .experience address {
