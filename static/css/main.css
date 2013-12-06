@@ -84,6 +84,48 @@ header nav a.icon {
   width: 1.45em;
   border-radius: 1.45em;
   text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon.behance {
+  background-image: url("/images/behance-white.png");
+}
+.icon.behance:active,
+.icon.behance:focus {
+  background-image: url("/images/behance-grey.png");
+}
+
+.icon.vimeo {
+  background-image: url("/images/vimeo-white.png");
+}
+.icon.vimeo:active,
+.icon.vimeo:focus {
+  background-image: url("/images/vimeo-grey.png");
+}
+
+.icon.flickr {
+  background-image: url("/images/flickr-white.png");
+}
+.icon.flickr:active,
+.icon.flickr:focus {
+  background-image: url("/images/flickr-grey.png");
+}
+
+.icon.linkedin {
+  background-image: url("/images/linkedin-white.png");
+}
+.icon.linkedin:active,
+.icon.linkedin:focus {
+  background-image: url("/images/linkedin-grey.png");
+}
+
+.icon.pinterest {
+  background-image: url("/images/pinterest-white.png");
+}
+.icon.pinterest:active,
+.icon.pinterest:focus {
+  background-image: url("/images/pinterest-grey.png");
 }
 
 .main {
