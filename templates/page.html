@@ -25,7 +25,13 @@
     {% for image in current.context.images %}
       <li><img src="{{ image }}"></li>
     {% endfor %}
+    {% for video in current.context.videos %}
+      <li><iframe class="video" src="{{ video }}"></iframe></li>
+    {% endfor %}
   </ul>
+
+
+
 
 </section>
 
